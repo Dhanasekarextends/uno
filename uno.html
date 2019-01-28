@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/uno.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+</head>
+<body>
+	<div class=container-main>
+		<div class="top-container">
+			<div id="bot-bg" class="player">
+				<img class="icon" src="./imgs/bot.png">
+			</div>
+			<div id="unKnownDeck" class="play-cards">
+				
+
+			</div>
+		</div>
+	
+		<div class="mid-container">
+			<div class="mid-section">
+				<img class="mid-img" src="./imgs/uno_button.png" onclick="unoButton()">
+			</div>
+			<div class="mid-section">
+				<div id="tableCards" class="deck-card" onclick="addCard();">
+					<div class="oval-unknown">
+						<p class="uno-text">UNO</p>
+					</div>
+				</div>
+			</div>
+			<div id="thrownCard" class="mid-section">
+			
+			</div>
+			<div class="mid-section">
+				<p id="timer" class="timer">00 : 00</p>
+			</div>
+		</div>
+		<div class=bot-container>
+			<div id="knownDeck" class="play-cards" style="display: flex;flex-direction: row-reverse;">
+				
+
+			</div>
+			<div id="player-bg" class="player">
+				<img id="skip" class="icon" onclick="skipTurn()" src="./imgs/person.png">
+			</div>
+		</div>
+	</div>
+<div id="myModal" class="modal">
+	<div class="color-content"><span>Choose your color</span></div>
+  <div class="modal-content">
+    <div class="color-box" style="background-color: red" onclick="red()"></div>
+    <div class="color-box" style="background-color: blue" onclick="blue()"></div>
+    <div class="color-box" style="background-color: green" onclick="green()"></div>
+    <div class="color-box" style="background-color: yellow" onclick="yellow()"></div>
+  </div>
+</div>
+<div  id="starter" class="starter-main">
+	<div class="starter-container">
+   		<div class="starter-caption">Enter Your Name : </div>
+ 		 <div class="starter-content">
+   		<input id="userName" type="text" name="firstname">
+   		<div id="submit" onclick="starterSubmit()">Submit</div>
+   		</div>
+	</div>
+</div>
+<script type="text/javascript" src="./js/uno.js"></script>
+</body>
+</html>
+

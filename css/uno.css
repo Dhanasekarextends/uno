@@ -1,0 +1,308 @@
+* {	
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../imgs/grad.jpg");
+}
+
+.unknown-card:hover , .known-card:hover {
+	z-index: 1;
+	transform: translate(2px,-2px);
+}
+
+.unknown-card {
+	float: left;
+	height: 170px;
+	width: 110px;
+	margin-top: 2%;
+	border: 8px solid white;
+	border-radius: 8px;
+	position: relative;
+	margin-left: -5%;
+	display: flex;
+	align-items: center;
+	background-color: black;
+    -webkit-box-shadow: 5px 5px 20px #222;
+}
+
+.known-card {
+	height: 170px;
+	width: 	110px;
+	margin-top: 1.5%;
+	border: 8px solid white;
+	border-radius: 8px;
+	position: relative;
+	margin-right: -5%;
+    -webkit-box-shadow: 5px 5px 20px #222;
+}
+
+.uno-text {
+	color: orange;
+	font-size: 230%;
+	text-shadow: 2px 2px #000;
+	margin: 0px;
+}
+
+.oval-known {
+	width: 100%;
+    height: 40%;
+    background: white;
+    transform: rotate(-35deg);	
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oval-unknown {
+	width: 100%;
+    height: 40%;
+    overflow: hidden;
+    background: red;
+    transform: rotate(-35deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-mid-text {
+    font-size: 45px;	
+    font-family: Aclonica;
+    transform: rotate(35deg);
+}
+
+.known-card : hover {
+	z-index: 1;
+}
+
+.known-card-top {
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: flex-start;
+	font-family: Aclonica;
+}
+
+.known-card-bottom {
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: flex-end;
+	font-family: Aclonica;
+}
+
+.container-main {
+	width: 100%;
+	height: 100%;
+	background-image: url("../imgs/uno_bg.jpg");
+}
+
+.player-cards {
+	height: 100%;
+	width: auto;
+}
+
+.icon {
+	height: 80%;
+	width: auto;
+    -webkit-filter: drop-shadow(10px 10px 10px #222 );
+    filter: drop-shadow(10px 10px 10px #222);
+}
+
+.player {
+	height: 90%;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.top-container {
+	height: 35%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mid-container {
+	height: 30%;
+	width: 100%;
+	object-fit: contain;
+	display: flex;
+	flex-direction: row;
+}
+
+.bot-container {
+	height: 35%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mid-section {
+	height: 100%;
+	width: 25%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.deck-card {
+	height: 170px;
+	width: 110px;
+	border: 8px solid white;
+	border-radius: 8px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+    transform: rotate(-90deg);	
+    -webkit-box-shadow: 5px 5px 20px #222;
+}
+
+.mid-img {
+	height: auto;
+	width: 100px;
+    -webkit-filter: drop-shadow(10px 10px 10px #222 );
+    filter: drop-shadow(10px 10px 10px #222);
+}
+
+.mid-section :active {
+	opacity: .5;
+}
+
+.thrown-card {
+	height: 170px;
+	width: 	110px;
+	border: 8px solid white;
+	border-radius: 8px;
+	position: absolute;
+	display: flex;
+    transform: rotate(-90deg);	
+	flex-direction: column;
+	justify-content: space-between;
+    -webkit-box-shadow: 5px 5px 20px #222;
+}
+
+.timer {
+	font-family: Aldrich;
+	text-shadow: 2px 2px #222	;
+}
+
+.play-cards {
+	height: 90%;
+	width: 80%;
+	position: relative;
+    display: flex;
+    padding: 0%  5%;
+}
+
+.player-indicator {
+	background-image: radial-gradient(white, grey, transparent);
+}
+
+.modal {
+  z-index: 1;
+  position: fixed;
+  left: 38%;
+  top: 30%;
+  background-color: #fefefe;
+}
+
+.color-content {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: grey;
+}
+
+.modal-content {
+	display: flex;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  color: grey;
+}
+
+.color-box {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+.starter-main {
+	height: 100%;
+	width: 100%;
+	background: rgba(60, 91, 247, 0.5);
+  	z-index: 1;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+}
+
+.starter-container {
+	height: 30%;
+	width: 30%;
+  	z-index: 500;
+ 	position: fixed;
+  	left: 36%;
+  	top: 30%;
+  	border-radius: 5px;
+  	background-color: #3C5BF7;
+    -webkit-box-shadow: 5px 5px 20px #222;
+}
+
+.starter-caption {
+	height: 50%;
+ 	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-family: Aclonica;
+}
+
+.starter-content {
+	height: 50%;
+	display: flex;
+ 	background-color: #3C5BF7;
+ 	margin: auto;
+ 	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#userName {
+	font-family: Aclonica;
+	height: 25px;
+	color: #3C5BF7;
+}
+
+#submit {
+	background-color: red;
+	color: white;
+	padding:5px 10px;
+	margin-top: 15px;
+	font-size: 14px;
+	font-family: Aclonica;
+	border-radius: 5px;
+}
+
+
