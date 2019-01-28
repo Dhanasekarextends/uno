@@ -272,7 +272,7 @@ function endGame() {
 	if (playerPoints<botPoints){
 		alert("Time Over. "+playerName+" has won the game!! "+playerName+ " "+playerPoints+" and Bot is "+ botPoints);
 	}else if(botPoints<playerPoints){
-		alert("Time Over. Bot has won the game!!"+playerName+ " "+playerPoints+" and Bot is "+ botPoints);
+		alert("Time Over. Bot has won the game!! "+playerName+ " "+playerPoints+" and Bot is "+ botPoints);
 	}else {
 		alert("This game is a tie!! "+playerName+ " "+playerPoints+" and Bot is "+ botPoints);
 	} 
@@ -406,12 +406,6 @@ function yellow() {
  	thrownDeck[0][0] = "yellow";
 	thrownCard.innerHTML+='<div class="thrown-card" style="background-color: '+thrownDeck[0][0]+'";><div class="known-card-top"><span>'+thrownDeck[0][1]+'</span></div><div class="oval-known"><p class="card-mid-text" style="color: '+ thrownDeck[0][0] +'";>'+thrownDeck[0][1]+'</p></div><div class="known-card-bottom"><span>'+thrownDeck[0][1]+'</span></div></div>';
 	changeTurn();
-}
-
-function skipTurn() {
-	if (turn==1) {
-		changeTurn();
-	}
 }
 
 function starterSubmit() {
